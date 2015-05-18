@@ -1,7 +1,5 @@
-# version 1.4-1
-# docker-version 0.11.1
-FROM        ubuntu:12.04
-MAINTAINER  Jim Myhrberg "contact@jimeh.me"
+FROM        ubuntu:latest
+MAINTAINER  Boggart "github.com/Boggart"
 
 # We use a bootstrap script to avoid having temporary cache files and build
 # dependencies being committed and included into the docker image.

@@ -1,4 +1,5 @@
 # ZNC for Docker
+Forked from https://github.com/jimeh/docker-znc/
 
 Run the [ZNC](http://znc.in) IRC Bouncer in a Docker container.
 
@@ -85,6 +86,6 @@ simply run in the background.
 ## Building It Yourself
 
 1. Follow Prerequisites above.
-2. Checkout source: `git clone https://github.com/jimeh/docker-znc.git && cd docker-znc`
+2. Checkout source: `git clone https://github.com/Boggart/docker-znc.git && cd docker-znc`
 3. Build container: `sudo docker build -t $(whoami)/znc .`
 4. Run container: `sudo docker run -d -p 6667 -v $HOME/.znc:/znc-data $(whoami)/znc`
