@@ -15,7 +15,7 @@ Run the [ZNC](http://znc.in) IRC Bouncer in a Docker container.
 To retain your ZNC settings between runs, you will need to bind a directory
 from the host to `/znc-data` in the container. For example:
 
-    docker run -d -p 6667 -v $HOME/.znc:/znc-data jimeh/znc
+    docker run -d -p 6667 -v $HOME/.znc:/znc-data boggart/docker-znc
 
 This will download the image if needed, and create a default config file in
 your data directory unless you already have a config in place. The default
@@ -26,7 +26,7 @@ exposed:
 
 Or if you want to specify which port to map the default 6667 port to:
 
-    docker run -d -p 36667:6667 -v $HOME/.znc:/znc-data jimeh/znc
+    docker run -d -p 36667:6667 -v $HOME/.znc:/znc-data boggart/docker-znc
 
 Resulting in port 36667 on the host mapping to 6667 within the container.
 
