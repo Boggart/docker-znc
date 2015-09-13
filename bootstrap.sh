@@ -3,7 +3,7 @@ set -e
 
 
 # Config
-ZNC_VERSION="1.6.0"
+ZNC_VERSION="1.6.1"
 
 
 # Ensure package list is up to date.
